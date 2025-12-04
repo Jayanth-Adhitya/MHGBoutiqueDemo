@@ -93,17 +93,28 @@ export default function MessageList({ messages, isLoading, onSuggestionClick, is
 
   return (
     <div className="flex-1 overflow-y-auto overflow-x-hidden px-4 py-6 relative">
-      {/* Floating stop audio button */}
+      {/* Floating audio indicator & stop button */}
       {isSpeaking && (
-        <button
-          onClick={onStopSpeaking}
-          className="fixed bottom-28 right-4 md:right-8 z-50 flex items-center gap-2 px-4 py-2 rounded-full bg-[#11d452] text-[#102216] font-medium text-sm shadow-lg hover:bg-[#0fb847] transition-all duration-300 animate-pulse"
-        >
-          <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-            <rect x="6" y="6" width="12" height="12" rx="2" />
-          </svg>
-          <span>Stop</span>
-        </button>
+        <div className="fixed bottom-32 left-1/2 -translate-x-1/2 z-50 flex items-center gap-3 px-4 py-2.5 rounded-full bg-black/80 backdrop-blur-sm border border-white/20 shadow-xl">
+          {/* Sound wave animation */}
+          <div className="flex items-center gap-0.5">
+            <span className="w-1 h-3 bg-[#11d452] rounded-full animate-pulse" style={{ animationDelay: '0ms' }}></span>
+            <span className="w-1 h-4 bg-[#11d452] rounded-full animate-pulse" style={{ animationDelay: '150ms' }}></span>
+            <span className="w-1 h-2 bg-[#11d452] rounded-full animate-pulse" style={{ animationDelay: '300ms' }}></span>
+            <span className="w-1 h-5 bg-[#11d452] rounded-full animate-pulse" style={{ animationDelay: '100ms' }}></span>
+            <span className="w-1 h-3 bg-[#11d452] rounded-full animate-pulse" style={{ animationDelay: '250ms' }}></span>
+          </div>
+          <span className="text-white text-sm">Speaking...</span>
+          <button
+            onClick={onStopSpeaking}
+            className="flex items-center justify-center w-7 h-7 rounded-full bg-red-500 hover:bg-red-600 text-white transition-colors"
+            title="Stop audio"
+          >
+            <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 24 24">
+              <rect x="6" y="6" width="12" height="12" rx="1" />
+            </svg>
+          </button>
+        </div>
       )}
 
       {/* Welcome screen */}

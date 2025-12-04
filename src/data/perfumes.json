@@ -1,0 +1,1229 @@
+{
+  "perfumes": [
+    {
+      "id": "AQ001",
+      "name": "Ocean Breeze",
+      "brand": "Azure Collection",
+      "scentType": "ocean",
+      "scentFamily": "Fresh/Aquatic",
+      "notes": {
+        "top": ["Sea Salt", "Bergamot", "Lemon"],
+        "middle": ["Marine Accord", "Jasmine", "Water Lily"],
+        "base": ["Driftwood", "White Musk", "Ambergris"]
+      },
+      "price": 85,
+      "priceRange": "mid",
+      "description": "A refreshing oceanic fragrance that captures the essence of a morning sea breeze. Perfect for those who love crisp, clean aquatic scents.",
+      "imageUrl": "https://images.unsplash.com/photo-1541643600914-78b084683601?w=400",
+      "gender": "unisex",
+      "intensity": "moderate",
+      "tags": ["fresh", "clean", "summer", "daytime", "casual", "beach", "office"]
+    },
+    {
+      "id": "AQ002",
+      "name": "Deep Blue",
+      "brand": "Nautical Luxe",
+      "scentType": "ocean",
+      "scentFamily": "Fresh/Aquatic",
+      "notes": {
+        "top": ["Ozone", "Grapefruit", "Mint"],
+        "middle": ["Sea Kelp", "Violet Leaf", "Cucumber"],
+        "base": ["Cedarwood", "Vetiver", "Musk"]
+      },
+      "price": 120,
+      "priceRange": "mid",
+      "description": "Dive into the depths with this intense marine fragrance. Evokes the mysterious beauty of the deep ocean.",
+      "imageUrl": "https://images.unsplash.com/photo-1594035910387-fea47794261f?w=400",
+      "gender": "masculine",
+      "intensity": "strong",
+      "tags": ["confident", "masculine", "summer", "evening", "date night", "sophisticated"]
+    },
+    {
+      "id": "AQ003",
+      "name": "Mediterranean Wave",
+      "brand": "Côte d'Azur",
+      "scentType": "ocean",
+      "scentFamily": "Fresh/Aquatic",
+      "notes": {
+        "top": ["Sicilian Lemon", "Neroli", "Sea Spray"],
+        "middle": ["Fig Leaf", "Rosemary", "Lavender"],
+        "base": ["Sandalwood", "Benzoin", "White Cedar"]
+      },
+      "price": 165,
+      "priceRange": "luxury",
+      "description": "Transport yourself to the sun-drenched shores of the Mediterranean. A sophisticated blend of citrus and marine notes.",
+      "imageUrl": "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=400",
+      "gender": "unisex",
+      "intensity": "moderate",
+      "tags": ["luxury", "vacation", "summer", "elegant", "travel", "sophisticated"]
+    },
+    {
+      "id": "AQ004",
+      "name": "Coral Reef",
+      "brand": "Tropical Essence",
+      "scentType": "ocean",
+      "scentFamily": "Fresh/Aquatic",
+      "notes": {
+        "top": ["Pink Pepper", "Mandarin", "Sea Breeze"],
+        "middle": ["Coral Flower", "Lotus", "Coconut Water"],
+        "base": ["Blonde Woods", "Musk", "Vanilla"]
+      },
+      "price": 55,
+      "priceRange": "budget",
+      "description": "A playful tropical ocean scent with sweet undertones. Like a vacation in a bottle.",
+      "imageUrl": "https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?w=400",
+      "gender": "feminine",
+      "intensity": "light",
+      "tags": ["playful", "tropical", "summer", "beach", "young", "casual", "affordable"]
+    },
+    {
+      "id": "AQ005",
+      "name": "Pacific Mist",
+      "brand": "Coastal Living",
+      "scentType": "ocean",
+      "scentFamily": "Fresh/Aquatic",
+      "notes": {
+        "top": ["Sea Salt", "Yuzu", "Water Notes"],
+        "middle": ["Sea Glass", "Driftwood", "White Tea"],
+        "base": ["Musk", "Ambergris", "Blonde Wood"]
+      },
+      "price": 78,
+      "priceRange": "mid",
+      "description": "The fresh, misty air of the Pacific coast captured in a bottle. Clean and calming.",
+      "imageUrl": "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=400",
+      "gender": "unisex",
+      "intensity": "light",
+      "tags": ["clean", "calming", "everyday", "office", "fresh", "minimalist"]
+    },
+    {
+      "id": "FL001",
+      "name": "Rose Garden",
+      "brand": "Floral Dreams",
+      "scentType": "rose",
+      "scentFamily": "Floral",
+      "notes": {
+        "top": ["Pink Pepper", "Lychee", "Pear"],
+        "middle": ["Damask Rose", "Peony", "Magnolia"],
+        "base": ["Patchouli", "Musk", "Amber"]
+      },
+      "price": 145,
+      "priceRange": "mid",
+      "description": "A classic romantic rose fragrance with modern sophistication. Timeless elegance in every spritz.",
+      "imageUrl": "https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?w=400",
+      "gender": "feminine",
+      "intensity": "moderate",
+      "tags": ["romantic", "elegant", "wedding", "date night", "feminine", "classic", "timeless"]
+    },
+    {
+      "id": "FL002",
+      "name": "Jasmine Nights",
+      "brand": "Oriental Bloom",
+      "scentType": "jasmine",
+      "scentFamily": "Floral",
+      "notes": {
+        "top": ["Green Notes", "Bergamot", "Mandarin"],
+        "middle": ["Jasmine Sambac", "Tuberose", "Ylang-Ylang"],
+        "base": ["Sandalwood", "Vanilla", "Cashmeran"]
+      },
+      "price": 175,
+      "priceRange": "luxury",
+      "description": "An intoxicating white floral bouquet that blooms at night. Sensual and mysterious.",
+      "imageUrl": "https://images.unsplash.com/photo-1557170334-a9632e77c6e4?w=400",
+      "gender": "feminine",
+      "intensity": "strong",
+      "tags": ["sexy", "seductive", "night", "date night", "sensual", "mysterious", "luxury"]
+    },
+    {
+      "id": "FL003",
+      "name": "Lily Whisper",
+      "brand": "Garden Secrets",
+      "scentType": "lily",
+      "scentFamily": "Floral",
+      "notes": {
+        "top": ["Citrus Zest", "Green Leaves", "Aldehydes"],
+        "middle": ["Lily of the Valley", "Muguet", "Iris"],
+        "base": ["Cedar", "White Musk", "Moss"]
+      },
+      "price": 68,
+      "priceRange": "budget",
+      "description": "A delicate, fresh floral that whispers rather than shouts. Perfect for everyday elegance.",
+      "imageUrl": "https://images.unsplash.com/photo-1616949755610-8c9bbc08f138?w=400",
+      "gender": "feminine",
+      "intensity": "light",
+      "tags": ["delicate", "office", "everyday", "spring", "clean", "professional", "subtle"]
+    },
+    {
+      "id": "FL004",
+      "name": "Peony Blush",
+      "brand": "Garden Secrets",
+      "scentType": "peony",
+      "scentFamily": "Floral",
+      "notes": {
+        "top": ["Apple", "Pink Grapefruit", "Raspberry"],
+        "middle": ["Peony", "Rose", "Freesia"],
+        "base": ["Musk", "Cashmere Wood", "Ambroxan"]
+      },
+      "price": 92,
+      "priceRange": "mid",
+      "description": "Fresh, romantic peonies with a fruity twist. Like a spring garden in full bloom.",
+      "imageUrl": "https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?w=400",
+      "gender": "feminine",
+      "intensity": "moderate",
+      "tags": ["romantic", "spring", "brunch", "garden party", "feminine", "fresh", "young"]
+    },
+    {
+      "id": "FL005",
+      "name": "Tuberose Obsession",
+      "brand": "Midnight Garden",
+      "scentType": "tuberose",
+      "scentFamily": "Floral",
+      "notes": {
+        "top": ["Bergamot", "Green Notes", "Orange Blossom"],
+        "middle": ["Tuberose", "Gardenia", "Jasmine"],
+        "base": ["Musk", "Sandalwood", "Coconut"]
+      },
+      "price": 198,
+      "priceRange": "luxury",
+      "description": "An intoxicating tuberose that commands attention. Bold, creamy, and unforgettable.",
+      "imageUrl": "https://images.unsplash.com/photo-1557170334-a9632e77c6e4?w=400",
+      "gender": "feminine",
+      "intensity": "strong",
+      "tags": ["bold", "statement", "evening", "party", "dramatic", "luxury", "memorable"]
+    },
+    {
+      "id": "WD001",
+      "name": "Sandalwood Soul",
+      "brand": "Timber & Bark",
+      "scentType": "sandalwood",
+      "scentFamily": "Woody",
+      "notes": {
+        "top": ["Cardamom", "Saffron", "Pink Pepper"],
+        "middle": ["Sandalwood", "Iris", "Violet"],
+        "base": ["Mysore Sandalwood", "Cashmere Wood", "Leather"]
+      },
+      "price": 195,
+      "priceRange": "luxury",
+      "description": "Pure creamy sandalwood at its finest. A meditative scent for deep contemplation.",
+      "imageUrl": "https://images.unsplash.com/photo-1616949755610-8c9bbc08f138?w=400",
+      "gender": "unisex",
+      "intensity": "moderate",
+      "tags": ["meditative", "calm", "sophisticated", "yoga", "spiritual", "warm", "creamy"]
+    },
+    {
+      "id": "WD002",
+      "name": "Cedar Forest",
+      "brand": "Northern Woods",
+      "scentType": "cedar",
+      "scentFamily": "Woody",
+      "notes": {
+        "top": ["Juniper Berry", "Black Pepper", "Grapefruit"],
+        "middle": ["Atlas Cedar", "Pine Needle", "Cypress"],
+        "base": ["Vetiver", "Oakmoss", "Benzoin"]
+      },
+      "price": 110,
+      "priceRange": "mid",
+      "description": "Walk through an ancient cedar forest with this grounding, earthy fragrance.",
+      "imageUrl": "https://images.unsplash.com/photo-1616949755610-8c9bbc08f138?w=400",
+      "gender": "masculine",
+      "intensity": "strong",
+      "tags": ["nature", "outdoorsy", "masculine", "fall", "grounding", "confident", "rugged"]
+    },
+    {
+      "id": "WD003",
+      "name": "Oud Royale",
+      "brand": "Arabian Nights",
+      "scentType": "oud",
+      "scentFamily": "Woody/Oriental",
+      "notes": {
+        "top": ["Rose", "Saffron", "Cinnamon"],
+        "middle": ["Cambodian Oud", "Incense", "Myrrh"],
+        "base": ["Amber", "Sandalwood", "Musk"]
+      },
+      "price": 280,
+      "priceRange": "luxury",
+      "description": "A majestic oud fragrance fit for royalty. Rich, complex, and utterly luxurious.",
+      "imageUrl": "https://images.unsplash.com/photo-1557170334-a9632e77c6e4?w=400",
+      "gender": "unisex",
+      "intensity": "strong",
+      "tags": ["luxury", "exotic", "evening", "special occasion", "rich", "opulent", "middle eastern"]
+    },
+    {
+      "id": "WD004",
+      "name": "Vetiver Gentleman",
+      "brand": "Classic Grooming",
+      "scentType": "vetiver",
+      "scentFamily": "Woody",
+      "notes": {
+        "top": ["Bergamot", "Lemon", "Coriander"],
+        "middle": ["Vetiver", "Geranium", "Nutmeg"],
+        "base": ["Vetiver Root", "Tobacco", "Amber"]
+      },
+      "price": 135,
+      "priceRange": "mid",
+      "description": "The quintessential gentleman's fragrance. Refined vetiver with classic elegance.",
+      "imageUrl": "https://images.unsplash.com/photo-1594035910387-fea47794261f?w=400",
+      "gender": "masculine",
+      "intensity": "moderate",
+      "tags": ["gentleman", "classic", "office", "professional", "refined", "business", "sophisticated"]
+    },
+    {
+      "id": "WD005",
+      "name": "Palo Santo Dreams",
+      "brand": "Sacred Woods",
+      "scentType": "palo santo",
+      "scentFamily": "Woody",
+      "notes": {
+        "top": ["Lemon", "Mint", "Eucalyptus"],
+        "middle": ["Palo Santo", "Frankincense", "Elemi"],
+        "base": ["Cedarwood", "Musk", "Amber"]
+      },
+      "price": 88,
+      "priceRange": "mid",
+      "description": "The sacred wood of South America. Cleansing, spiritual, and utterly unique.",
+      "imageUrl": "https://images.unsplash.com/photo-1616949755610-8c9bbc08f138?w=400",
+      "gender": "unisex",
+      "intensity": "moderate",
+      "tags": ["spiritual", "cleansing", "meditation", "yoga", "unique", "wellness", "calming"]
+    },
+    {
+      "id": "OR001",
+      "name": "Vanilla Dreams",
+      "brand": "Sweet Indulgence",
+      "scentType": "vanilla",
+      "scentFamily": "Oriental/Amber",
+      "notes": {
+        "top": ["Bergamot", "Orange Blossom", "Pink Pepper"],
+        "middle": ["Madagascar Vanilla", "Orchid", "Jasmine"],
+        "base": ["Tonka Bean", "Benzoin", "Caramel"]
+      },
+      "price": 95,
+      "priceRange": "mid",
+      "description": "A gourmand vanilla fragrance that's warm and comforting. Like a cashmere blanket.",
+      "imageUrl": "https://images.unsplash.com/photo-1541643600914-78b084683601?w=400",
+      "gender": "feminine",
+      "intensity": "moderate",
+      "tags": ["cozy", "warm", "winter", "gourmand", "sweet", "comforting", "cuddly"]
+    },
+    {
+      "id": "OR002",
+      "name": "Spice Market",
+      "brand": "Exotic Journey",
+      "scentType": "spicy",
+      "scentFamily": "Oriental/Amber",
+      "notes": {
+        "top": ["Cardamom", "Cinnamon", "Ginger"],
+        "middle": ["Saffron", "Rose", "Clove"],
+        "base": ["Amber", "Oud", "Vanilla"]
+      },
+      "price": 155,
+      "priceRange": "luxury",
+      "description": "Wander through an exotic spice bazaar with this warm, aromatic blend.",
+      "imageUrl": "https://images.unsplash.com/photo-1557170334-a9632e77c6e4?w=400",
+      "gender": "unisex",
+      "intensity": "strong",
+      "tags": ["exotic", "spicy", "winter", "evening", "warm", "mysterious", "travel"]
+    },
+    {
+      "id": "OR003",
+      "name": "Amber Elixir",
+      "brand": "Golden Hour",
+      "scentType": "amber",
+      "scentFamily": "Oriental/Amber",
+      "notes": {
+        "top": ["Mandarin", "Bergamot", "Pink Pepper"],
+        "middle": ["Labdanum", "Cistus", "Jasmine"],
+        "base": ["Amber", "Vanilla", "Sandalwood"]
+      },
+      "price": 135,
+      "priceRange": "mid",
+      "description": "Liquid gold in a bottle. A warm, resinous amber that glows on the skin.",
+      "imageUrl": "https://images.unsplash.com/photo-1557170334-a9632e77c6e4?w=400",
+      "gender": "unisex",
+      "intensity": "moderate",
+      "tags": ["warm", "golden", "fall", "romantic", "sensual", "evening", "date night"]
+    },
+    {
+      "id": "OR004",
+      "name": "Coffee Addict",
+      "brand": "Gourmand Life",
+      "scentType": "coffee",
+      "scentFamily": "Oriental/Gourmand",
+      "notes": {
+        "top": ["Espresso", "Cardamom", "Bergamot"],
+        "middle": ["Coffee Absolute", "Rose", "Jasmine"],
+        "base": ["Vanilla", "Tonka Bean", "White Musk"]
+      },
+      "price": 105,
+      "priceRange": "mid",
+      "description": "For coffee lovers who want to smell as good as their morning brew. Rich and addictive.",
+      "imageUrl": "https://images.unsplash.com/photo-1541643600914-78b084683601?w=400",
+      "gender": "unisex",
+      "intensity": "moderate",
+      "tags": ["coffee", "gourmand", "cozy", "unique", "addictive", "warm", "morning"]
+    },
+    {
+      "id": "OR005",
+      "name": "Chocolate Kiss",
+      "brand": "Sweet Indulgence",
+      "scentType": "chocolate",
+      "scentFamily": "Oriental/Gourmand",
+      "notes": {
+        "top": ["Orange Zest", "Raspberry", "Black Pepper"],
+        "middle": ["Dark Chocolate", "Coffee", "Rose"],
+        "base": ["Vanilla", "Patchouli", "Musk"]
+      },
+      "price": 78,
+      "priceRange": "mid",
+      "description": "Indulge in this decadent chocolate fragrance. Sweet, sexy, and irresistible.",
+      "imageUrl": "https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?w=400",
+      "gender": "feminine",
+      "intensity": "moderate",
+      "tags": ["chocolate", "gourmand", "sweet", "sexy", "indulgent", "date night", "winter"]
+    },
+    {
+      "id": "OR006",
+      "name": "Caramel Seduction",
+      "brand": "Gourmand Life",
+      "scentType": "caramel",
+      "scentFamily": "Oriental/Gourmand",
+      "notes": {
+        "top": ["Sea Salt", "Apple", "Bergamot"],
+        "middle": ["Salted Caramel", "Brown Sugar", "Praline"],
+        "base": ["Vanilla", "Sandalwood", "Musk"]
+      },
+      "price": 68,
+      "priceRange": "budget",
+      "description": "Salted caramel perfection. Sweet, sophisticated, and utterly delicious.",
+      "imageUrl": "https://images.unsplash.com/photo-1541643600914-78b084683601?w=400",
+      "gender": "feminine",
+      "intensity": "moderate",
+      "tags": ["caramel", "gourmand", "sweet", "cozy", "fall", "winter", "yummy"]
+    },
+    {
+      "id": "OR007",
+      "name": "Incense Ceremony",
+      "brand": "Sacred Smoke",
+      "scentType": "incense",
+      "scentFamily": "Oriental/Amber",
+      "notes": {
+        "top": ["Pink Pepper", "Elemi", "Bergamot"],
+        "middle": ["Frankincense", "Myrrh", "Olibanum"],
+        "base": ["Benzoin", "Sandalwood", "Amber"]
+      },
+      "price": 145,
+      "priceRange": "mid",
+      "description": "Sacred temple incense captured in fragrance form. Meditative and profound.",
+      "imageUrl": "https://images.unsplash.com/photo-1616949755610-8c9bbc08f138?w=400",
+      "gender": "unisex",
+      "intensity": "strong",
+      "tags": ["incense", "spiritual", "meditation", "temple", "smoky", "profound", "unique"]
+    },
+    {
+      "id": "CT001",
+      "name": "Citrus Burst",
+      "brand": "Vitamin C",
+      "scentType": "citrus",
+      "scentFamily": "Fresh/Citrus",
+      "notes": {
+        "top": ["Bergamot", "Lemon", "Grapefruit"],
+        "middle": ["Orange Blossom", "Neroli", "Petit Grain"],
+        "base": ["White Musk", "Cedar", "Amber"]
+      },
+      "price": 65,
+      "priceRange": "budget",
+      "description": "An energizing citrus explosion that wakes up your senses. Fresh and invigorating.",
+      "imageUrl": "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=400",
+      "gender": "unisex",
+      "intensity": "light",
+      "tags": ["fresh", "energizing", "summer", "morning", "office", "gym", "daytime"]
+    },
+    {
+      "id": "CT002",
+      "name": "Bergamot Sun",
+      "brand": "Italian Summer",
+      "scentType": "bergamot",
+      "scentFamily": "Fresh/Citrus",
+      "notes": {
+        "top": ["Calabrian Bergamot", "Lemon Verbena", "Mandarin"],
+        "middle": ["Tea", "Ginger", "Jasmine"],
+        "base": ["Musk", "Vetiver", "Cedarwood"]
+      },
+      "price": 125,
+      "priceRange": "mid",
+      "description": "Capture the Italian Riviera with this elegant bergamot-centered fragrance.",
+      "imageUrl": "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=400",
+      "gender": "unisex",
+      "intensity": "moderate",
+      "tags": ["elegant", "italian", "summer", "sophisticated", "classy", "travel", "refined"]
+    },
+    {
+      "id": "CT003",
+      "name": "Grapefruit Fizz",
+      "brand": "Vitamin C",
+      "scentType": "grapefruit",
+      "scentFamily": "Fresh/Citrus",
+      "notes": {
+        "top": ["Pink Grapefruit", "Blood Orange", "Lime"],
+        "middle": ["Mint", "Green Tea", "Blackcurrant"],
+        "base": ["Cedar", "Musk", "Vetiver"]
+      },
+      "price": 52,
+      "priceRange": "budget",
+      "description": "Sparkling grapefruit freshness. Like a cool refreshing drink on a hot day.",
+      "imageUrl": "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=400",
+      "gender": "unisex",
+      "intensity": "light",
+      "tags": ["fresh", "sparkling", "summer", "gym", "sporty", "young", "energetic"]
+    },
+    {
+      "id": "GR001",
+      "name": "Fresh Cut Grass",
+      "brand": "Garden Party",
+      "scentType": "green",
+      "scentFamily": "Fresh/Green",
+      "notes": {
+        "top": ["Green Grass", "Violet Leaf", "Galbanum"],
+        "middle": ["Hyacinth", "Lily", "Green Tea"],
+        "base": ["Vetiver", "Musk", "Cedar"]
+      },
+      "price": 75,
+      "priceRange": "budget",
+      "description": "The essence of a freshly mowed lawn on a summer morning. Pure green freshness.",
+      "imageUrl": "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=400",
+      "gender": "unisex",
+      "intensity": "light",
+      "tags": ["fresh", "green", "summer", "outdoors", "nature", "clean", "daytime"]
+    },
+    {
+      "id": "GR002",
+      "name": "Herb Garden",
+      "brand": "Botanical Series",
+      "scentType": "herbal",
+      "scentFamily": "Fresh/Green",
+      "notes": {
+        "top": ["Basil", "Mint", "Eucalyptus"],
+        "middle": ["Lavender", "Rosemary", "Thyme"],
+        "base": ["Cedarwood", "Musk", "Moss"]
+      },
+      "price": 88,
+      "priceRange": "mid",
+      "description": "An aromatic journey through a Mediterranean herb garden. Fresh and sophisticated.",
+      "imageUrl": "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=400",
+      "gender": "unisex",
+      "intensity": "moderate",
+      "tags": ["herbal", "aromatic", "spa", "relaxing", "natural", "wellness", "sophisticated"]
+    },
+    {
+      "id": "GR003",
+      "name": "Petrichor Rain",
+      "brand": "Elements",
+      "scentType": "rain",
+      "scentFamily": "Fresh/Green",
+      "notes": {
+        "top": ["Ozone", "Green Notes", "Eucalyptus"],
+        "middle": ["Geranium", "Violet Leaf", "Wet Earth"],
+        "base": ["Vetiver", "Musk", "Cedar"]
+      },
+      "price": 95,
+      "priceRange": "mid",
+      "description": "The magical scent of rain on dry earth. Nostalgic, fresh, and utterly unique.",
+      "imageUrl": "https://images.unsplash.com/photo-1541643600914-78b084683601?w=400",
+      "gender": "unisex",
+      "intensity": "moderate",
+      "tags": ["rain", "petrichor", "unique", "nostalgic", "fresh", "earthy", "nature"]
+    },
+    {
+      "id": "GR004",
+      "name": "Green Tea Ceremony",
+      "brand": "Zen Garden",
+      "scentType": "green tea",
+      "scentFamily": "Fresh/Green",
+      "notes": {
+        "top": ["Green Tea", "Bergamot", "Mint"],
+        "middle": ["Jasmine", "Muguet", "White Tea"],
+        "base": ["Musk", "Cedar", "Amber"]
+      },
+      "price": 72,
+      "priceRange": "budget",
+      "description": "Zen-like serenity in a bottle. Clean, calming green tea with subtle florals.",
+      "imageUrl": "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=400",
+      "gender": "unisex",
+      "intensity": "light",
+      "tags": ["tea", "zen", "calming", "clean", "minimalist", "spa", "meditation"]
+    },
+    {
+      "id": "MK001",
+      "name": "Velvet Musk",
+      "brand": "Skin Scents",
+      "scentType": "musk",
+      "scentFamily": "Musk",
+      "notes": {
+        "top": ["Aldehydes", "Bergamot", "Pink Pepper"],
+        "middle": ["White Musk", "Rose", "Iris"],
+        "base": ["Cashmeran", "Sandalwood", "Amber"]
+      },
+      "price": 105,
+      "priceRange": "mid",
+      "description": "A soft, sensual musk that becomes one with your skin. Intimate and addictive.",
+      "imageUrl": "https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?w=400",
+      "gender": "feminine",
+      "intensity": "light",
+      "tags": ["intimate", "skin scent", "sensual", "soft", "romantic", "date night", "subtle"]
+    },
+    {
+      "id": "MK002",
+      "name": "Clean Skin",
+      "brand": "Skin Scents",
+      "scentType": "clean",
+      "scentFamily": "Musk",
+      "notes": {
+        "top": ["Aldehydes", "Citrus", "Green Notes"],
+        "middle": ["White Musk", "Lily", "Violet"],
+        "base": ["Sandalwood", "Cedar", "Soft Musk"]
+      },
+      "price": 62,
+      "priceRange": "budget",
+      "description": "The scent of perfectly clean skin, fresh from the shower. Universally appealing.",
+      "imageUrl": "https://images.unsplash.com/photo-1541643600914-78b084683601?w=400",
+      "gender": "unisex",
+      "intensity": "light",
+      "tags": ["clean", "fresh", "shower fresh", "everyday", "office", "subtle", "professional"]
+    },
+    {
+      "id": "MK003",
+      "name": "Cashmere Embrace",
+      "brand": "Comfort Zone",
+      "scentType": "musk",
+      "scentFamily": "Musk",
+      "notes": {
+        "top": ["Bergamot", "Pear", "Saffron"],
+        "middle": ["Cashmeran", "Iris", "Rose"],
+        "base": ["Musk", "Sandalwood", "Vanilla"]
+      },
+      "price": 128,
+      "priceRange": "mid",
+      "description": "Like being wrapped in the softest cashmere. Cozy, warm, and endlessly comforting.",
+      "imageUrl": "https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?w=400",
+      "gender": "unisex",
+      "intensity": "moderate",
+      "tags": ["cozy", "comfort", "warm", "winter", "fall", "soft", "cuddly", "hygge"]
+    },
+    {
+      "id": "FR001",
+      "name": "Berry Bliss",
+      "brand": "Fruity Finds",
+      "scentType": "fruity",
+      "scentFamily": "Fruity",
+      "notes": {
+        "top": ["Raspberry", "Blackcurrant", "Pear"],
+        "middle": ["Peony", "Rose", "Peach"],
+        "base": ["Musk", "Vanilla", "Sandalwood"]
+      },
+      "price": 58,
+      "priceRange": "budget",
+      "description": "A playful burst of juicy berries. Fun, flirty, and perfect for daytime.",
+      "imageUrl": "https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?w=400",
+      "gender": "feminine",
+      "intensity": "moderate",
+      "tags": ["fruity", "playful", "young", "fun", "daytime", "flirty", "casual"]
+    },
+    {
+      "id": "FR002",
+      "name": "Peach Paradise",
+      "brand": "Fruity Finds",
+      "scentType": "peach",
+      "scentFamily": "Fruity",
+      "notes": {
+        "top": ["Peach", "Nectarine", "Bergamot"],
+        "middle": ["Jasmine", "Ylang-Ylang", "Rose"],
+        "base": ["Musk", "Sandalwood", "Vanilla"]
+      },
+      "price": 65,
+      "priceRange": "budget",
+      "description": "Ripe, juicy peaches at the peak of summer. Sweet, feminine, and irresistible.",
+      "imageUrl": "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=400",
+      "gender": "feminine",
+      "intensity": "moderate",
+      "tags": ["peach", "fruity", "summer", "sweet", "feminine", "young", "cheerful"]
+    },
+    {
+      "id": "FR003",
+      "name": "Cherry Bomb",
+      "brand": "Bold & Beautiful",
+      "scentType": "cherry",
+      "scentFamily": "Fruity",
+      "notes": {
+        "top": ["Black Cherry", "Almond", "Bergamot"],
+        "middle": ["Cherry Blossom", "Rose", "Plum"],
+        "base": ["Tonka Bean", "Vanilla", "Musk"]
+      },
+      "price": 82,
+      "priceRange": "mid",
+      "description": "Bold, sexy cherry with an almond twist. Makes a statement wherever you go.",
+      "imageUrl": "https://images.unsplash.com/photo-1557170334-a9632e77c6e4?w=400",
+      "gender": "feminine",
+      "intensity": "strong",
+      "tags": ["cherry", "bold", "sexy", "statement", "party", "night out", "confident"]
+    },
+    {
+      "id": "FR004",
+      "name": "Coconut Paradise",
+      "brand": "Tropical Escape",
+      "scentType": "coconut",
+      "scentFamily": "Fruity/Tropical",
+      "notes": {
+        "top": ["Coconut", "Pineapple", "Bergamot"],
+        "middle": ["Tiare Flower", "Frangipani", "Jasmine"],
+        "base": ["Vanilla", "Sandalwood", "Musk"]
+      },
+      "price": 55,
+      "priceRange": "budget",
+      "description": "Tropical vacation vibes in a bottle. Creamy coconut with island florals.",
+      "imageUrl": "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=400",
+      "gender": "feminine",
+      "intensity": "moderate",
+      "tags": ["coconut", "tropical", "beach", "vacation", "summer", "island", "exotic"]
+    },
+    {
+      "id": "FR005",
+      "name": "Apple Orchard",
+      "brand": "Garden Party",
+      "scentType": "apple",
+      "scentFamily": "Fruity",
+      "notes": {
+        "top": ["Green Apple", "Red Apple", "Lemon"],
+        "middle": ["Lily", "Rose", "Peony"],
+        "base": ["Musk", "Cedar", "Amber"]
+      },
+      "price": 48,
+      "priceRange": "budget",
+      "description": "Crisp, fresh apples straight from the orchard. Clean, cheerful, and youthful.",
+      "imageUrl": "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=400",
+      "gender": "feminine",
+      "intensity": "light",
+      "tags": ["apple", "fresh", "clean", "young", "everyday", "cheerful", "innocent"]
+    },
+    {
+      "id": "LT001",
+      "name": "Leather & Smoke",
+      "brand": "Raw Elements",
+      "scentType": "leather",
+      "scentFamily": "Leather",
+      "notes": {
+        "top": ["Black Pepper", "Cardamom", "Elemi"],
+        "middle": ["Leather", "Tobacco", "Suede"],
+        "base": ["Oud", "Benzoin", "Castoreum"]
+      },
+      "price": 185,
+      "priceRange": "luxury",
+      "description": "Bold and unapologetic leather fragrance for those who dare to be different.",
+      "imageUrl": "https://images.unsplash.com/photo-1594035910387-fea47794261f?w=400",
+      "gender": "masculine",
+      "intensity": "strong",
+      "tags": ["leather", "bold", "masculine", "edgy", "confident", "bad boy", "statement"]
+    },
+    {
+      "id": "LT002",
+      "name": "Tobacco Gentleman",
+      "brand": "Classic Club",
+      "scentType": "tobacco",
+      "scentFamily": "Leather/Oriental",
+      "notes": {
+        "top": ["Bergamot", "Lavender", "Cinnamon"],
+        "middle": ["Tobacco Leaf", "Honey", "Rum"],
+        "base": ["Vanilla", "Tonka Bean", "Leather"]
+      },
+      "price": 145,
+      "priceRange": "mid",
+      "description": "Sophisticated tobacco blend with honey sweetness. Old money elegance.",
+      "imageUrl": "https://images.unsplash.com/photo-1594035910387-fea47794261f?w=400",
+      "gender": "masculine",
+      "intensity": "strong",
+      "tags": ["tobacco", "gentleman", "sophisticated", "classy", "evening", "mature", "refined"]
+    },
+    {
+      "id": "LT003",
+      "name": "Whiskey Nights",
+      "brand": "Spirit Collection",
+      "scentType": "boozy",
+      "scentFamily": "Leather/Oriental",
+      "notes": {
+        "top": ["Whiskey", "Apple", "Cinnamon"],
+        "middle": ["Tobacco", "Honey", "Jasmine"],
+        "base": ["Vanilla", "Oak", "Musk"]
+      },
+      "price": 125,
+      "priceRange": "mid",
+      "description": "Like a fine whiskey by the fireplace. Warm, intoxicating, and sophisticated.",
+      "imageUrl": "https://images.unsplash.com/photo-1616949755610-8c9bbc08f138?w=400",
+      "gender": "unisex",
+      "intensity": "strong",
+      "tags": ["whiskey", "boozy", "warm", "cozy", "winter", "evening", "sophisticated"]
+    },
+    {
+      "id": "PD001",
+      "name": "Iris Powder",
+      "brand": "Soft Touch",
+      "scentType": "powdery",
+      "scentFamily": "Powdery",
+      "notes": {
+        "top": ["Violet", "Aldehydes", "Mandarin"],
+        "middle": ["Iris", "Orris Butter", "Heliotrope"],
+        "base": ["White Musk", "Vanilla", "Sandalwood"]
+      },
+      "price": 148,
+      "priceRange": "mid",
+      "description": "Elegant powdery iris with vintage charm. Sophisticated and timeless.",
+      "imageUrl": "https://images.unsplash.com/photo-1541643600914-78b084683601?w=400",
+      "gender": "feminine",
+      "intensity": "moderate",
+      "tags": ["powdery", "elegant", "vintage", "sophisticated", "timeless", "classy", "feminine"]
+    },
+    {
+      "id": "PD002",
+      "name": "Baby Powder Dream",
+      "brand": "Innocence",
+      "scentType": "powdery",
+      "scentFamily": "Powdery",
+      "notes": {
+        "top": ["Aldehydes", "Bergamot", "Violet"],
+        "middle": ["Iris", "Rose", "Lily"],
+        "base": ["Musk", "Vanilla", "Sandalwood"]
+      },
+      "price": 58,
+      "priceRange": "budget",
+      "description": "Soft, comforting powder reminiscent of innocence. Clean and nostalgic.",
+      "imageUrl": "https://images.unsplash.com/photo-1541643600914-78b084683601?w=400",
+      "gender": "feminine",
+      "intensity": "light",
+      "tags": ["powdery", "clean", "soft", "innocent", "nostalgic", "comfort", "subtle"]
+    },
+    {
+      "id": "SX001",
+      "name": "Midnight Seduction",
+      "brand": "After Hours",
+      "scentType": "sexy",
+      "scentFamily": "Oriental/Amber",
+      "notes": {
+        "top": ["Black Pepper", "Cardamom", "Bergamot"],
+        "middle": ["Tuberose", "Jasmine", "Rose"],
+        "base": ["Musk", "Amber", "Vanilla"]
+      },
+      "price": 155,
+      "priceRange": "luxury",
+      "description": "Unapologetically sexy. Designed to captivate and leave a lasting impression.",
+      "imageUrl": "https://images.unsplash.com/photo-1557170334-a9632e77c6e4?w=400",
+      "gender": "feminine",
+      "intensity": "strong",
+      "tags": ["sexy", "seductive", "date night", "evening", "sensual", "bold", "romantic"]
+    },
+    {
+      "id": "SX002",
+      "name": "Dark Desire",
+      "brand": "After Hours",
+      "scentType": "sexy",
+      "scentFamily": "Oriental/Amber",
+      "notes": {
+        "top": ["Saffron", "Black Pepper", "Cardamom"],
+        "middle": ["Oud", "Rose", "Jasmine"],
+        "base": ["Musk", "Amber", "Sandalwood"]
+      },
+      "price": 195,
+      "priceRange": "luxury",
+      "description": "Mysterious and magnetic. For those who embrace their darker side.",
+      "imageUrl": "https://images.unsplash.com/photo-1557170334-a9632e77c6e4?w=400",
+      "gender": "unisex",
+      "intensity": "strong",
+      "tags": ["sexy", "mysterious", "magnetic", "dark", "evening", "date night", "bold"]
+    },
+    {
+      "id": "SX003",
+      "name": "Skin Chemistry",
+      "brand": "Pheromone Lab",
+      "scentType": "pheromone",
+      "scentFamily": "Musk",
+      "notes": {
+        "top": ["Bergamot", "Pink Pepper", "Aldehydes"],
+        "middle": ["Musk", "Iris", "Rose"],
+        "base": ["Ambroxan", "Cetalox", "Sandalwood"]
+      },
+      "price": 175,
+      "priceRange": "luxury",
+      "description": "Enhances your natural chemistry. Subtle yet irresistibly attractive.",
+      "imageUrl": "https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?w=400",
+      "gender": "unisex",
+      "intensity": "light",
+      "tags": ["pheromone", "subtle", "attractive", "intimate", "skin scent", "chemistry", "seductive"]
+    },
+    {
+      "id": "SP001",
+      "name": "Sport Energy",
+      "brand": "Active Life",
+      "scentType": "fresh",
+      "scentFamily": "Fresh/Aromatic",
+      "notes": {
+        "top": ["Grapefruit", "Lemon", "Mint"],
+        "middle": ["Lavender", "Geranium", "Sage"],
+        "base": ["Cedar", "Musk", "Vetiver"]
+      },
+      "price": 45,
+      "priceRange": "budget",
+      "description": "Energizing freshness for an active lifestyle. Clean and invigorating.",
+      "imageUrl": "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=400",
+      "gender": "masculine",
+      "intensity": "moderate",
+      "tags": ["sport", "gym", "fresh", "energizing", "active", "clean", "daytime"]
+    },
+    {
+      "id": "SP002",
+      "name": "Yoga Bliss",
+      "brand": "Zen Garden",
+      "scentType": "wellness",
+      "scentFamily": "Fresh/Green",
+      "notes": {
+        "top": ["Eucalyptus", "Mint", "Bergamot"],
+        "middle": ["Lavender", "Chamomile", "Green Tea"],
+        "base": ["Sandalwood", "Musk", "Cedar"]
+      },
+      "price": 68,
+      "priceRange": "budget",
+      "description": "Find your inner peace. Calming aromatherapy meets beautiful fragrance.",
+      "imageUrl": "https://images.unsplash.com/photo-1616949755610-8c9bbc08f138?w=400",
+      "gender": "unisex",
+      "intensity": "light",
+      "tags": ["yoga", "wellness", "calming", "relaxing", "meditation", "spa", "zen"]
+    },
+    {
+      "id": "VN001",
+      "name": "Vintage Romance",
+      "brand": "Heritage Collection",
+      "scentType": "classic",
+      "scentFamily": "Floral/Aldehydic",
+      "notes": {
+        "top": ["Aldehydes", "Bergamot", "Lemon"],
+        "middle": ["Rose", "Jasmine", "Ylang-Ylang"],
+        "base": ["Sandalwood", "Vetiver", "Musk"]
+      },
+      "price": 165,
+      "priceRange": "luxury",
+      "description": "Old Hollywood glamour in a bottle. Timeless elegance for the sophisticated.",
+      "imageUrl": "https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?w=400",
+      "gender": "feminine",
+      "intensity": "strong",
+      "tags": ["vintage", "classic", "elegant", "glamour", "sophisticated", "timeless", "old money"]
+    },
+    {
+      "id": "VN002",
+      "name": "Gentleman's Club",
+      "brand": "Heritage Collection",
+      "scentType": "classic",
+      "scentFamily": "Fougere",
+      "notes": {
+        "top": ["Lavender", "Bergamot", "Lemon"],
+        "middle": ["Geranium", "Jasmine", "Carnation"],
+        "base": ["Oakmoss", "Coumarin", "Musk"]
+      },
+      "price": 140,
+      "priceRange": "mid",
+      "description": "The original gentleman's scent. Distinguished, refined, and eternally stylish.",
+      "imageUrl": "https://images.unsplash.com/photo-1594035910387-fea47794261f?w=400",
+      "gender": "masculine",
+      "intensity": "moderate",
+      "tags": ["classic", "gentleman", "refined", "distinguished", "office", "business", "timeless"]
+    },
+    {
+      "id": "UN001",
+      "name": "Gender Fluid",
+      "brand": "Modern Identity",
+      "scentType": "unisex",
+      "scentFamily": "Woody/Musk",
+      "notes": {
+        "top": ["Bergamot", "Pink Pepper", "Cardamom"],
+        "middle": ["Iris", "Violet Leaf", "Cedar"],
+        "base": ["Musk", "Sandalwood", "Vetiver"]
+      },
+      "price": 115,
+      "priceRange": "mid",
+      "description": "Breaking boundaries. A truly genderless scent for the modern individual.",
+      "imageUrl": "https://images.unsplash.com/photo-1541643600914-78b084683601?w=400",
+      "gender": "unisex",
+      "intensity": "moderate",
+      "tags": ["unisex", "genderless", "modern", "minimalist", "versatile", "everyday", "clean"]
+    },
+    {
+      "id": "WD006",
+      "name": "Fireside Stories",
+      "brand": "Cozy Home",
+      "scentType": "smoky",
+      "scentFamily": "Woody/Smoky",
+      "notes": {
+        "top": ["Birch", "Black Pepper", "Clove"],
+        "middle": ["Smoke", "Guaiac Wood", "Cypress"],
+        "base": ["Oud", "Benzoin", "Leather"]
+      },
+      "price": 138,
+      "priceRange": "mid",
+      "description": "Crackling fireplace on a winter night. Smoky, warm, and incredibly cozy.",
+      "imageUrl": "https://images.unsplash.com/photo-1616949755610-8c9bbc08f138?w=400",
+      "gender": "unisex",
+      "intensity": "strong",
+      "tags": ["smoky", "cozy", "winter", "fireplace", "warm", "evening", "comfort"]
+    },
+    {
+      "id": "FL006",
+      "name": "Wedding Day",
+      "brand": "Bridal Bliss",
+      "scentType": "bridal",
+      "scentFamily": "Floral",
+      "notes": {
+        "top": ["Orange Blossom", "Bergamot", "Pear"],
+        "middle": ["White Rose", "Jasmine", "Lily"],
+        "base": ["Musk", "Sandalwood", "Amber"]
+      },
+      "price": 185,
+      "priceRange": "luxury",
+      "description": "For your most special day. Romantic white florals that photograph beautifully.",
+      "imageUrl": "https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?w=400",
+      "gender": "feminine",
+      "intensity": "moderate",
+      "tags": ["wedding", "bridal", "romantic", "elegant", "special occasion", "white florals", "memorable"]
+    },
+    {
+      "id": "OF001",
+      "name": "Boardroom Ready",
+      "brand": "Executive Line",
+      "scentType": "professional",
+      "scentFamily": "Woody/Fresh",
+      "notes": {
+        "top": ["Bergamot", "Grapefruit", "Black Pepper"],
+        "middle": ["Cedar", "Lavender", "Geranium"],
+        "base": ["Vetiver", "Musk", "Amber"]
+      },
+      "price": 98,
+      "priceRange": "mid",
+      "description": "Command respect in any meeting. Professional, polished, and powerful.",
+      "imageUrl": "https://images.unsplash.com/photo-1594035910387-fea47794261f?w=400",
+      "gender": "unisex",
+      "intensity": "moderate",
+      "tags": ["office", "professional", "business", "meeting", "corporate", "confident", "polished"]
+    },
+    {
+      "id": "PR001",
+      "name": "Night Out",
+      "brand": "Party Time",
+      "scentType": "party",
+      "scentFamily": "Oriental/Fruity",
+      "notes": {
+        "top": ["Champagne", "Pink Pepper", "Bergamot"],
+        "middle": ["Rose", "Jasmine", "Peach"],
+        "base": ["Musk", "Vanilla", "Sandalwood"]
+      },
+      "price": 78,
+      "priceRange": "mid",
+      "description": "Pop the champagne! Effervescent and glamorous for your best nights out.",
+      "imageUrl": "https://images.unsplash.com/photo-1557170334-a9632e77c6e4?w=400",
+      "gender": "feminine",
+      "intensity": "strong",
+      "tags": ["party", "night out", "glamorous", "fun", "celebration", "club", "sparkling"]
+    },
+    {
+      "id": "TRV001",
+      "name": "Wanderlust",
+      "brand": "Global Nomad",
+      "scentType": "travel",
+      "scentFamily": "Woody/Spicy",
+      "notes": {
+        "top": ["Saffron", "Cardamom", "Bergamot"],
+        "middle": ["Leather", "Tobacco", "Oud"],
+        "base": ["Amber", "Sandalwood", "Musk"]
+      },
+      "price": 158,
+      "priceRange": "luxury",
+      "description": "For the eternal traveler. Captures the excitement of new adventures.",
+      "imageUrl": "https://images.unsplash.com/photo-1616949755610-8c9bbc08f138?w=400",
+      "gender": "unisex",
+      "intensity": "strong",
+      "tags": ["travel", "adventure", "exotic", "wanderlust", "explorer", "sophisticated", "journey"]
+    },
+    {
+      "id": "OR008",
+      "name": "Honey Trap",
+      "brand": "Sweet Seduction",
+      "scentType": "honey",
+      "scentFamily": "Oriental/Gourmand",
+      "notes": {
+        "top": ["Orange Blossom", "Bergamot", "Almond"],
+        "middle": ["Honey", "Jasmine", "Orchid"],
+        "base": ["Vanilla", "Benzoin", "Sandalwood"]
+      },
+      "price": 112,
+      "priceRange": "mid",
+      "description": "Sweet honey drizzled over warm skin. Irresistibly attractive and sensual.",
+      "imageUrl": "https://images.unsplash.com/photo-1541643600914-78b084683601?w=400",
+      "gender": "feminine",
+      "intensity": "moderate",
+      "tags": ["honey", "sweet", "gourmand", "sensual", "attractive", "cozy", "seductive"]
+    },
+    {
+      "id": "GR005",
+      "name": "Bamboo Grove",
+      "brand": "Asian Gardens",
+      "scentType": "bamboo",
+      "scentFamily": "Fresh/Green",
+      "notes": {
+        "top": ["Bamboo", "Green Tea", "Bergamot"],
+        "middle": ["Lotus", "Water Lily", "White Tea"],
+        "base": ["Musk", "Cedar", "Blonde Woods"]
+      },
+      "price": 85,
+      "priceRange": "mid",
+      "description": "Tranquil Asian-inspired freshness. Clean, green, and beautifully serene.",
+      "imageUrl": "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=400",
+      "gender": "unisex",
+      "intensity": "light",
+      "tags": ["bamboo", "zen", "asian", "fresh", "clean", "tranquil", "serene"]
+    },
+    {
+      "id": "FL007",
+      "name": "Lavender Fields",
+      "brand": "Provence Dreams",
+      "scentType": "lavender",
+      "scentFamily": "Fresh/Aromatic",
+      "notes": {
+        "top": ["French Lavender", "Bergamot", "Lemon"],
+        "middle": ["Lavender Absolute", "Rosemary", "Geranium"],
+        "base": ["Musk", "Tonka Bean", "Oakmoss"]
+      },
+      "price": 72,
+      "priceRange": "budget",
+      "description": "Endless purple fields of Provence. Calming, aromatic, and timelessly beautiful.",
+      "imageUrl": "https://images.unsplash.com/photo-1616949755610-8c9bbc08f138?w=400",
+      "gender": "unisex",
+      "intensity": "moderate",
+      "tags": ["lavender", "calming", "relaxing", "provence", "sleep", "spa", "soothing"]
+    },
+    {
+      "id": "MN001",
+      "name": "First Date",
+      "brand": "Romance Series",
+      "scentType": "romantic",
+      "scentFamily": "Floral/Fresh",
+      "notes": {
+        "top": ["Pear", "Bergamot", "Pink Pepper"],
+        "middle": ["Peony", "Rose", "Magnolia"],
+        "base": ["Musk", "Cedar", "Amber"]
+      },
+      "price": 88,
+      "priceRange": "mid",
+      "description": "Butterflies in a bottle. Fresh, flirty, and perfectly romantic.",
+      "imageUrl": "https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?w=400",
+      "gender": "feminine",
+      "intensity": "moderate",
+      "tags": ["romantic", "flirty", "date night", "feminine", "sweet", "charming", "pretty"]
+    },
+    {
+      "id": "SS001",
+      "name": "Summer Solstice",
+      "brand": "Seasonal Collection",
+      "scentType": "summer",
+      "scentFamily": "Fresh/Citrus",
+      "notes": {
+        "top": ["Lemon", "Orange", "Grapefruit"],
+        "middle": ["Jasmine", "Neroli", "Green Tea"],
+        "base": ["White Musk", "Cedar", "Amber"]
+      },
+      "price": 75,
+      "priceRange": "mid",
+      "description": "The longest day of summer captured in a bottle. Bright, joyful, and warm.",
+      "imageUrl": "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=400",
+      "gender": "unisex",
+      "intensity": "moderate",
+      "tags": ["summer", "sunny", "bright", "happy", "daytime", "vacation", "joyful"]
+    },
+    {
+      "id": "WN001",
+      "name": "Winter Warmth",
+      "brand": "Seasonal Collection",
+      "scentType": "winter",
+      "scentFamily": "Oriental/Spicy",
+      "notes": {
+        "top": ["Cinnamon", "Nutmeg", "Orange"],
+        "middle": ["Gingerbread", "Clove", "Cardamom"],
+        "base": ["Vanilla", "Benzoin", "Sandalwood"]
+      },
+      "price": 85,
+      "priceRange": "mid",
+      "description": "Holiday magic in fragrance form. Spicy, sweet, and wonderfully festive.",
+      "imageUrl": "https://images.unsplash.com/photo-1557170334-a9632e77c6e4?w=400",
+      "gender": "unisex",
+      "intensity": "strong",
+      "tags": ["winter", "holiday", "christmas", "cozy", "spicy", "festive", "warm"]
+    }
+  ],
+  "scentFamilies": [
+    {
+      "name": "Fresh/Aquatic",
+      "description": "Crisp, clean scents reminiscent of the ocean, sea breeze, and water",
+      "keywords": ["ocean", "sea", "marine", "aquatic", "water", "fresh", "crisp", "clean", "beach"]
+    },
+    {
+      "name": "Floral",
+      "description": "Scents derived from flowers like rose, jasmine, lily, and more",
+      "keywords": ["floral", "flower", "rose", "jasmine", "lily", "peony", "romantic", "feminine", "tuberose", "gardenia"]
+    },
+    {
+      "name": "Woody",
+      "description": "Earthy, rich scents from woods like sandalwood, cedar, and oud",
+      "keywords": ["woody", "wood", "sandalwood", "cedar", "oud", "earthy", "forest", "tree", "vetiver", "palo santo"]
+    },
+    {
+      "name": "Oriental/Amber",
+      "description": "Warm, exotic scents with vanilla, spices, and amber notes",
+      "keywords": ["oriental", "amber", "vanilla", "spicy", "warm", "exotic", "sweet", "rich", "incense"]
+    },
+    {
+      "name": "Gourmand",
+      "description": "Edible-smelling scents like vanilla, chocolate, coffee, and caramel",
+      "keywords": ["gourmand", "vanilla", "chocolate", "coffee", "caramel", "sweet", "edible", "dessert", "yummy", "honey"]
+    },
+    {
+      "name": "Fresh/Citrus",
+      "description": "Zesty, energizing scents from citrus fruits",
+      "keywords": ["citrus", "lemon", "orange", "bergamot", "grapefruit", "zesty", "fresh", "energizing", "lime"]
+    },
+    {
+      "name": "Fresh/Green",
+      "description": "Nature-inspired scents of grass, herbs, and leaves",
+      "keywords": ["green", "grass", "herb", "herbal", "leaf", "nature", "garden", "fresh", "tea", "bamboo", "rain", "petrichor"]
+    },
+    {
+      "name": "Musk",
+      "description": "Soft, sensual skin-like scents",
+      "keywords": ["musk", "musky", "skin", "soft", "sensual", "intimate", "clean", "subtle"]
+    },
+    {
+      "name": "Fruity",
+      "description": "Sweet, juicy scents from fruits",
+      "keywords": ["fruity", "fruit", "berry", "peach", "apple", "sweet", "juicy", "cherry", "coconut", "tropical"]
+    },
+    {
+      "name": "Leather",
+      "description": "Bold, sophisticated leather and tobacco scents",
+      "keywords": ["leather", "tobacco", "smoke", "smoky", "bold", "masculine", "whiskey", "boozy"]
+    },
+    {
+      "name": "Powdery",
+      "description": "Soft, elegant powdery scents with iris and violet",
+      "keywords": ["powdery", "powder", "iris", "violet", "soft", "elegant", "vintage", "baby powder"]
+    }
+  ],
+  "occasions": [
+    "everyday", "office", "date night", "wedding", "party", "gym", "beach", "vacation",
+    "brunch", "formal", "casual", "special occasion", "meeting", "club", "night out"
+  ],
+  "moods": [
+    "romantic", "sexy", "confident", "elegant", "playful", "cozy", "fresh", "clean",
+    "mysterious", "bold", "sophisticated", "calm", "energizing", "seductive"
+  ],
+  "seasons": ["spring", "summer", "fall", "winter"]
+}

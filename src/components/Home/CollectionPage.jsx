@@ -27,80 +27,76 @@ export default function CollectionPage({ onStartChat }) {
         </div>
 
         {/* Filters */}
-        <div className="flex flex-wrap justify-center gap-3 mb-10">
+        <div className="flex flex-wrap justify-center gap-1.5 md:gap-3 mb-6 md:mb-10 px-1">
           {categories.map(cat => (
             <button
               key={cat}
               onClick={() => setFilter(cat)}
               className={`
-                px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300
+                px-2 py-1 md:px-4 md:py-2 rounded md:rounded-lg text-[10px] md:text-sm font-medium transition-all duration-300
                 ${filter === cat
                   ? 'bg-[#11d452] text-[#102216]'
                   : 'bg-black/20 text-gray-300 border border-white/10 hover:bg-[#11d452]/20 hover:text-[#11d452] hover:border-[#11d452]/30'
                 }
               `}
             >
-              {cat.charAt(0).toUpperCase() + cat.slice(1)}
+              {cat === 'all' ? 'All' : cat.split('/')[0]}
             </button>
           ))}
         </div>
 
-        {/* Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Grid - 3 columns on mobile, 3 on tablet, 4 on desktop */}
+        <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-4 lg:gap-6">
           {filteredPerfumes.map((perfume) => (
             <div
               key={perfume.id}
-              className="bg-black/20 rounded-xl overflow-hidden border border-white/10 hover:border-[#11d452]/30 transition-all duration-300 group"
+              className="bg-black/20 rounded-lg md:rounded-xl overflow-hidden border border-white/10 hover:border-[#11d452]/30 transition-all duration-300 group"
             >
               {/* Image */}
-              <div className="relative h-56 overflow-hidden">
+              <div className="relative aspect-square md:h-48 lg:h-56 overflow-hidden">
                 <img
                   src={perfume.imageUrl}
                   alt={perfume.name}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#102216] via-transparent to-transparent"></div>
-                <div className="absolute top-4 right-4">
-                  <span className="bg-black/50 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-white">
+                {/* Price - hidden on mobile */}
+                <div className="hidden md:block absolute top-3 right-3">
+                  <span className="bg-black/50 backdrop-blur-sm px-2 py-0.5 rounded-full text-xs font-bold text-white">
                     ${perfume.price}
-                  </span>
-                </div>
-                <div className="absolute top-4 left-4">
-                  <span className="bg-[#11d452]/20 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-[#11d452]">
-                    {perfume.scentFamily}
                   </span>
                 </div>
               </div>
 
               {/* Content */}
-              <div className="p-5">
-                <div className="mb-3">
-                  <h3 className="text-lg font-bold text-white">{perfume.name}</h3>
-                  <p className="text-gray-500 text-xs uppercase tracking-wider">{perfume.brand}</p>
+              <div className="p-2 md:p-4">
+                <div className="mb-1 md:mb-2">
+                  <h3 className="text-xs md:text-base font-bold text-white truncate">{perfume.name}</h3>
+                  <p className="text-gray-500 text-[10px] md:text-xs uppercase tracking-wider truncate">{perfume.brand}</p>
                 </div>
 
-                <p className="text-gray-400 text-sm mb-4 line-clamp-2 leading-relaxed">
+                {/* Price on mobile */}
+                <p className="md:hidden text-[#D4A373] text-xs font-bold mb-1">${perfume.price}</p>
+
+                {/* Description - hidden on mobile */}
+                <p className="hidden md:block text-gray-400 text-sm mb-3 line-clamp-2 leading-relaxed">
                   {perfume.description}
                 </p>
 
-                {/* Notes */}
-                <div className="flex flex-wrap gap-2 mb-5">
+                {/* Notes - hidden on mobile */}
+                <div className="hidden md:flex flex-wrap gap-1.5 mb-4">
                   {perfume.notes.top.slice(0, 2).map((note, i) => (
-                    <span key={i} className="text-xs px-2 py-1 bg-emerald-500/10 text-emerald-400 rounded">
-                      {note}
-                    </span>
-                  ))}
-                  {perfume.notes.middle.slice(0, 1).map((note, i) => (
-                    <span key={`mid-${i}`} className="text-xs px-2 py-1 bg-teal-500/10 text-teal-400 rounded">
+                    <span key={i} className="text-xs px-2 py-0.5 bg-emerald-500/10 text-emerald-400 rounded">
                       {note}
                     </span>
                   ))}
                 </div>
 
                 <button
-                  className="w-full py-3 rounded-lg bg-[#D4A373]/20 text-[#D4A373] font-bold text-sm hover:bg-[#D4A373] hover:text-[#102216] transition-all duration-300"
+                  className="w-full py-1.5 md:py-2.5 rounded md:rounded-lg bg-[#D4A373]/20 text-[#D4A373] font-bold text-[10px] md:text-sm hover:bg-[#D4A373] hover:text-[#102216] transition-all duration-300"
                 >
-                  Add to Cart
+                  <span className="md:hidden">Add</span>
+                  <span className="hidden md:inline">Add to Cart</span>
                 </button>
               </div>
             </div>

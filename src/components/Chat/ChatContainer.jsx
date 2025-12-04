@@ -143,7 +143,13 @@ export default function ChatContainer() {
   return (
     <div className="flex flex-col h-full max-w-3xl mx-auto overflow-x-hidden">
       {/* Messages */}
-      <MessageList messages={messages} isLoading={isLoading} />
+      <MessageList
+        messages={messages}
+        isLoading={isLoading}
+        onSuggestionClick={(text) => handleSendMessage(text, voiceSupport.tts)}
+        isSpeaking={isSpeaking}
+        onStopSpeaking={() => voiceConversationRef.current?.stopSpeaking()}
+      />
 
       {/* Input Area */}
       <div className="p-4 pb-6">

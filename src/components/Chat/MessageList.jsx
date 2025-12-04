@@ -66,19 +66,46 @@ function Message({ message }) {
   );
 }
 
+// Suggestion prompts mapped to more detailed queries
+const suggestionPrompts = {
+  "Fresh ocean scent": "I'm looking for a fresh ocean-inspired perfume, something that reminds me of the sea breeze and beach vibes",
+  "Romantic date night": "Can you recommend a romantic, seductive perfume perfect for a date night?",
+  "Warm & cozy": "I want a warm and cozy fragrance, something comforting like vanilla or amber for winter evenings",
+  "Summer fragrance": "What's a great light and fresh summer fragrance that won't be too heavy in the heat?"
+};
+
 /**
  * MessageList Component
  * Scrollable list of chat messages with elegant welcome screen
  */
-export default function MessageList({ messages, isLoading }) {
+export default function MessageList({ messages, isLoading, onSuggestionClick, isSpeaking, onStopSpeaking }) {
   const bottomRef = useRef(null);
 
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages, isLoading]);
 
+  const handleSuggestionClick = (suggestion) => {
+    if (onSuggestionClick) {
+      onSuggestionClick(suggestionPrompts[suggestion] || suggestion);
+    }
+  };
+
   return (
-    <div className="flex-1 overflow-y-auto overflow-x-hidden px-4 py-6">
+    <div className="flex-1 overflow-y-auto overflow-x-hidden px-4 py-6 relative">
+      {/* Floating stop audio button */}
+      {isSpeaking && (
+        <button
+          onClick={onStopSpeaking}
+          className="fixed bottom-28 right-4 md:right-8 z-50 flex items-center gap-2 px-4 py-2 rounded-full bg-[#11d452] text-[#102216] font-medium text-sm shadow-lg hover:bg-[#0fb847] transition-all duration-300 animate-pulse"
+        >
+          <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+            <rect x="6" y="6" width="12" height="12" rx="2" />
+          </svg>
+          <span>Stop</span>
+        </button>
+      )}
+
       {/* Welcome screen */}
       {messages.length === 0 && (
         <div className="flex flex-col items-center justify-center h-full text-center px-4">
@@ -94,15 +121,11 @@ export default function MessageList({ messages, isLoading }) {
 
           {/* Quick suggestions */}
           <div className="flex flex-wrap justify-center gap-2 max-w-md">
-            {[
-              "Fresh ocean scent",
-              "Romantic date night",
-              "Warm & cozy",
-              "Summer fragrance"
-            ].map((suggestion, i) => (
+            {Object.keys(suggestionPrompts).map((suggestion, i) => (
               <button
                 key={i}
-                className="px-3 py-1.5 rounded-full text-xs bg-white/5 text-gray-400 border border-white/10 hover:bg-[#11d452]/10 hover:text-[#11d452] hover:border-[#11d452]/30 transition-all duration-300"
+                onClick={() => handleSuggestionClick(suggestion)}
+                className="px-3 py-1.5 rounded-full text-xs bg-white/5 text-gray-400 border border-white/10 hover:bg-[#11d452]/10 hover:text-[#11d452] hover:border-[#11d452]/30 transition-all duration-300 active:scale-95"
               >
                 {suggestion}
               </button>

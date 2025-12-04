@@ -18,6 +18,7 @@ export default function ChatContainer() {
   const [voiceError, setVoiceError] = useState('');
   const textareaRef = useRef(null);
   const voiceConversationRef = useRef(null);
+  const sendMessageRef = useRef(null);
 
   // Auto-resize textarea
   useEffect(() => {
@@ -66,17 +67,23 @@ export default function ChatContainer() {
     }
   }, []);
 
-  // Initialize voice
+  // Keep sendMessageRef in sync
+  useEffect(() => {
+    sendMessageRef.current = handleSendMessage;
+  }, [handleSendMessage]);
+
+  // Initialize voice - only once on mount
   useEffect(() => {
     const support = checkVoiceSupport();
     setVoiceSupport(support);
 
-    if (support.stt) {
+    if (support.stt && !voiceConversationRef.current) {
+      console.log('🎤 Initializing VoiceConversation');
       const vc = new VoiceConversation(
         (text, isFinal) => {
-          if (isFinal && text) {
+          if (isFinal && text && sendMessageRef.current) {
             setVoiceError('');
-            handleSendMessage(text, true);
+            sendMessageRef.current(text, true);
           }
         },
         (speaking) => setIsSpeaking(speaking),
@@ -94,12 +101,16 @@ export default function ChatContainer() {
       );
       vc.init();
       voiceConversationRef.current = vc;
-      return () => {
-        vc.destroy();
-        voiceConversationRef.current = null;
-      };
     }
-  }, [handleSendMessage]);
+
+    return () => {
+      if (voiceConversationRef.current) {
+        console.log('🎤 Cleaning up VoiceConversation');
+        voiceConversationRef.current.destroy();
+        voiceConversationRef.current = null;
+      }
+    };
+  }, []); // Empty dependency - only run on mount/unmount
 
   const handleVoiceClick = useCallback(async () => {
     const vc = voiceConversationRef.current;

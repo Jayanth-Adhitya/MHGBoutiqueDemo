@@ -297,15 +297,33 @@ export class VoiceConversation {
    * @param {string} text - Text to speak
    */
   async speak(text) {
+    if (!text || this.isSpeaking) {
+      console.log('🔇 Skipping speak - empty text or already speaking');
+      return;
+    }
+
+    console.log('🔊 Starting TTS for:', text.substring(0, 50) + '...');
     this.isSpeaking = true;
     this.onSpeaking?.(true);
 
     try {
-      // Stop listening while speaking
-      this.stopListening();
+      // Stop any active recording first (don't await - fire and forget)
+      if (this.recorder.isRecording()) {
+        this.recorder.stop();
+        this.isListening = false;
+        this.onListeningChange?.(false);
+      }
 
+      console.log('📡 Fetching audio from ElevenLabs...');
       const audioBlob = await textToSpeech(text);
+      console.log('✅ Audio blob received, size:', audioBlob.size);
+
+      if (audioBlob.size < 1000) {
+        console.warn('⚠️ Audio blob seems too small');
+      }
+
       await this.playAudioBlob(audioBlob);
+      console.log('🔊 Audio playback completed');
     } catch (error) {
       console.error('Speaking error:', error);
       this.onError?.(error.message);
@@ -321,22 +339,43 @@ export class VoiceConversation {
    */
   playAudioBlob(blob) {
     return new Promise((resolve, reject) => {
-      this.currentAudio = new Audio();
-      this.currentAudio.src = URL.createObjectURL(blob);
+      const audio = new Audio();
+      const audioUrl = URL.createObjectURL(blob);
+      audio.src = audioUrl;
+      this.currentAudio = audio;
 
-      this.currentAudio.onended = () => {
-        URL.revokeObjectURL(this.currentAudio.src);
+      audio.onloadedmetadata = () => {
+        console.log('🎵 Audio duration:', audio.duration, 'seconds');
+      };
+
+      audio.onplay = () => {
+        console.log('▶️ Audio started playing');
+      };
+
+      audio.onended = () => {
+        console.log('⏹️ Audio ended naturally');
+        URL.revokeObjectURL(audioUrl);
         this.currentAudio = null;
         resolve();
       };
 
-      this.currentAudio.onerror = (error) => {
-        URL.revokeObjectURL(this.currentAudio.src);
+      audio.onpause = () => {
+        console.log('⏸️ Audio paused');
+      };
+
+      audio.onerror = (error) => {
+        console.error('❌ Audio error:', error);
+        URL.revokeObjectURL(audioUrl);
         this.currentAudio = null;
         reject(error);
       };
 
-      this.currentAudio.play().catch(reject);
+      audio.play().catch((err) => {
+        console.error('❌ Failed to start playback:', err);
+        URL.revokeObjectURL(audioUrl);
+        this.currentAudio = null;
+        reject(err);
+      });
     });
   }
 
@@ -344,11 +383,13 @@ export class VoiceConversation {
    * Stop current audio playback
    */
   stopSpeaking() {
+    console.log('🛑 stopSpeaking called, currentAudio:', !!this.currentAudio);
     if (this.currentAudio) {
       this.currentAudio.pause();
       this.currentAudio.currentTime = 0;
       URL.revokeObjectURL(this.currentAudio.src);
       this.currentAudio = null;
+      console.log('🛑 Audio stopped by user');
     }
     this.isSpeaking = false;
     this.onSpeaking?.(false);
@@ -358,9 +399,12 @@ export class VoiceConversation {
    * Clean up resources
    */
   destroy() {
-    this.stopListening();
+    console.log('💀 VoiceConversation destroy called');
+    if (this.recorder.isRecording()) {
+      this.recorder.stop();
+    }
     this.stopSpeaking();
-    this.recognition = null;
+    this.recorder.cleanup();
   }
 }
 

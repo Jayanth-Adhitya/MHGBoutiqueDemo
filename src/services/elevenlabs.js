@@ -27,9 +27,13 @@ export async function textToSpeech(text, voiceId = DEFAULT_VOICE_ID) {
     throw new Error('ElevenLabs API key not configured');
   }
 
+  // Log the full text being sent
+  console.log('📝 TTS Input text:', text);
+  console.log('📝 TTS Text length:', text.length, 'characters');
+
   try {
     const response = await fetch(
-      `https://api.elevenlabs.io/v1/text-to-speech/${voiceId}/stream`,
+      `https://api.elevenlabs.io/v1/text-to-speech/${voiceId}`,
       {
         method: 'POST',
         headers: {
@@ -39,18 +43,24 @@ export async function textToSpeech(text, voiceId = DEFAULT_VOICE_ID) {
         },
         body: JSON.stringify({
           text: text,
-          model_id: 'eleven_turbo_v2_5',
+          model_id: 'eleven_multilingual_v2',
           voice_settings: VOICE_SETTINGS
         })
       }
     );
 
+    console.log('📡 TTS Response status:', response.status);
+    console.log('📡 TTS Response headers:', Object.fromEntries(response.headers.entries()));
+
     if (!response.ok) {
-      const error = await response.json().catch(() => ({}));
-      throw new Error(error.detail?.message || `TTS Error: ${response.status}`);
+      const errorText = await response.text();
+      console.error('❌ TTS Error response:', errorText);
+      throw new Error(`TTS Error: ${response.status} - ${errorText}`);
     }
 
-    return await response.blob();
+    const blob = await response.blob();
+    console.log('✅ TTS Blob type:', blob.type, 'size:', blob.size);
+    return blob;
   } catch (error) {
     console.error('Text-to-speech error:', error);
     throw error;

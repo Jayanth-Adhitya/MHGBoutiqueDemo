@@ -16,9 +16,9 @@ export default function Header({ onReset, currentView, onNavigateHome, onNavigat
   return (
     <header className="sticky top-0 z-50 glass-panel">
       <div className="w-full px-4 sm:px-6 lg:px-10 py-2 flex items-center justify-between">
-        {/* Logo - Left */}
+        {/* Logo - Left (hidden on mobile in chat view) */}
         <div
-          className="flex-shrink-0 cursor-pointer"
+          className={`flex-shrink-0 cursor-pointer ${currentView === 'chat' ? 'hidden md:block' : ''}`}
           onClick={() => handleNavigation(onNavigateHome)}
         >
           <img src={logo} alt="Logo" className="h-20 w-auto" />

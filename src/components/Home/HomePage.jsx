@@ -43,27 +43,27 @@ export default function HomePage({ onStartChat }) {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative min-h-[480px] flex flex-col items-center justify-center py-20 px-4">
+      <section className="relative min-h-[320px] md:min-h-[480px] flex flex-col items-center justify-center py-12 md:py-20 px-4">
         {/* Background Image - Forest */}
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat rounded-xl mx-4 my-4"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat rounded-xl mx-3 md:mx-4 my-3 md:my-4"
           style={{
             backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1920")`
           }}
         />
 
         {/* Hero Content */}
-        <div className="relative z-10 text-center max-w-2xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-[#D4A373] leading-tight tracking-tight mb-4">
+        <div className="relative z-10 text-center max-w-2xl mx-auto px-2">
+          <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-[#D4A373] leading-tight tracking-tight mb-3 md:mb-4">
             Find Your Perfect Scent
           </h1>
-          <p className="text-base md:text-lg text-white/90 mb-8 max-w-xl mx-auto">
+          <p className="text-sm md:text-lg text-white/90 mb-5 md:mb-8 max-w-xl mx-auto leading-relaxed">
             Not sure which fragrance suits you? Our AI-powered concierge helps you discover
             the perfect perfume based on your personality, mood, and preferences.
           </p>
           <button
             onClick={onStartChat}
-            className="px-6 py-3 md:px-8 md:py-4 rounded-lg bg-[#D4A373] text-[#102216] font-bold text-sm md:text-base hover:bg-[#c4935f] transition-colors"
+            className="px-5 py-2.5 md:px-8 md:py-4 rounded-lg bg-[#D4A373] text-[#102216] font-bold text-sm md:text-base hover:bg-[#c4935f] transition-colors"
           >
             Start Your Scent Journey
           </button>
